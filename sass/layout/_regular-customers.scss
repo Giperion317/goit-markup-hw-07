@@ -10,11 +10,13 @@
     .regular-customers-item {
         width: 170px;
         height: 92px;
+
+        &:not(:last-child) {
+            margin-right: 30px;
+        }
     }
 
-    .regular-customers-item:not(:last-child) {
-        margin-right: 30px;
-    }
+    
 
     .regular-customers-link {
         display: flex;
@@ -27,22 +29,20 @@
         border-radius: 4px;
 
         transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:hover,
+        &:focus {
+            border-color: var(--accent-color);
+        }
     }
-
-    .regular-customers-link:hover,
-    .regular-customers-link:focus {
-        border-color: var(--accent-color);
-    }
-
-    .regular-customers-link:hover .regular-customers-icon,
-    .regular-customers-link:focus .regular-customers-icon {
-        fill: var(--accent-color);
-    }
-
-
 
     .regular-customers-icon {
         fill: var(--icon-color);
 
         transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+        .regular-customers-link:hover &,
+        .regular-customers-link:focus & {
+            fill: var(--accent-color);
+        }
     }

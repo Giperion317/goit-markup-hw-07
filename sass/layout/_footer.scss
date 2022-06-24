@@ -14,8 +14,6 @@
     margin-right: 70px;
 }
 
-
-
 .contact-item:not(:last-child) {
     margin-bottom: 9px;
 }
@@ -28,15 +26,15 @@
     color: rgba(255, 255, 255, 0.6);
 
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
 }
 
 .adress-text {
     color: var(--secondory-color);
-}
-
-.contact-link:hover,
-.contact-link:focus {
-    color: var(--accent-color);
 }
 
 .block-social-footer {
@@ -84,9 +82,9 @@
     color: var(--secondory-color);
 
     padding: 15px 16px;
-}
 
-.form-footer-input::placeholder {
-    line-height: 1.25;
-    color: rgba(255, 255, 255, 0.6);
+    &::placeholder {
+        line-height: 1.25;
+        color: rgba(255, 255, 255, 0.6);
+    }
 }
