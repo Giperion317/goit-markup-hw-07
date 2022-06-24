@@ -26,9 +26,7 @@
     left: 0;
     bottom: 0;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @extend %align;
 
     font-weight: 700;
     font-size: 14px;

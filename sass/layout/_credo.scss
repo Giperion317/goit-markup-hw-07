@@ -14,9 +14,7 @@
 }
 
 .credo-icon-conteiner {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @extend %align;
     height: 120px;
     background-color: var(--back-ground-section-color);
     border-radius: 4px;

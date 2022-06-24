@@ -22,6 +22,12 @@
   overflow: hidden;
 }
 
+.portfolio-navigation, .regular-customers-link, .regular-customers-list, .work-image-title, .credo-icon-conteiner, .contact-form-checkbox-label, .modal-clous-btn, .social-list-link, .social-list, .form-footer-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 h1,
 h2,
 h3,
@@ -90,12 +96,6 @@ body {
   background-color: #188CE8;
 }
 
-.form-footer-btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .form-footer-btn-icon {
   margin-left: 10px;
   fill: var(--secondory-color);
@@ -105,19 +105,11 @@ body {
   align-self: center;
 }
 
-.social-list {
-  display: flex;
-  justify-content: center;
-}
-
 .social-list-item:not(:last-child) {
   margin-right: 10px;
 }
 
 .social-list-link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   width: 44px;
   height: 44px;
   border-radius: 50%;
@@ -164,21 +156,14 @@ body {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--accent-color);
-  margin-right: 93px;
 }
 
-.logo-item-header {
+.logo_theme_dark {
   color: #000000;
 }
 
-.logo-item-footer {
+.logo_theme_wite {
   color: var(--secondory-color);
-}
-
-.logo-footer {
-  display: block;
-  margin-bottom: 20px;
-  margin-right: 0;
 }
 
 .backdrop {
@@ -220,9 +205,6 @@ body {
   position: absolute;
   top: 8px;
   right: 8px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 30px;
   height: 30px;
   padding: 0;
@@ -319,9 +301,6 @@ body {
 }
 
 .contact-form-checkbox-label {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   font-size: 14px;
   line-height: 1.71;
   color: var(--text-color);
@@ -356,7 +335,7 @@ body {
   border-bottom: 1px solid #ECECEC;
 }
 
-.pape-header-conteiner {
+.pape-header__conteiner {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -367,15 +346,19 @@ body {
   align-items: center;
 }
 
+.page-header__logo {
+  margin-right: 93px;
+}
+
 .menu {
   display: flex;
 }
 
-.menu-item:not(:last-child) {
+.menu__item:not(:last-child) {
   margin-right: 50px;
 }
 
-.menu-link {
+.menu__link {
   position: relative;
   display: block;
   font-weight: 500;
@@ -386,14 +369,14 @@ body {
   padding-bottom: 32px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.menu-link:hover, .menu-link:focus {
+.menu__link:hover, .menu__link:focus {
   color: var(--accent-color);
 }
 
-.menu .menu-link.curent {
+.menu__link_active {
   color: var(--accent-color);
 }
-.menu .menu-link.curent::after {
+.menu__link_active::after {
   content: "";
   position: absolute;
   left: 0;
@@ -409,11 +392,11 @@ body {
   display: flex;
 }
 
-.contact-header-item:not(:last-child) {
+.contact-header__item:not(:last-child) {
   margin-right: 50px;
 }
 
-.contact-header-link {
+.contact-header__link {
   display: flex;
   align-items: center;
   font-weight: 500;
@@ -424,15 +407,15 @@ body {
   padding-bottom: 32px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.contact-header-link:hover, .contact-header-link:focus {
+.contact-header__link:hover, .contact-header__link:focus {
   color: var(--accent-color);
 }
 
-.contact-header-icon {
+.contact-header__icon {
   margin-right: 10px;
   fill: var(--text-color);
 }
-.contact-header-link:hover .contact-header-icon, .contact-header-link:focus .contact-header-icon {
+.contact-header__link:hover .contact-header__icon, .contact-header__link:focus .contact-header__icon {
   fill: var(--accent-color);
 }
 
@@ -478,9 +461,6 @@ body {
 }
 
 .credo-icon-conteiner {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   height: 120px;
   background-color: var(--back-ground-section-color);
   border-radius: 4px;
@@ -527,9 +507,6 @@ body {
   position: absolute;
   left: 0;
   bottom: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   font-weight: 700;
   font-size: 14px;
   letter-spacing: 0.03em;
@@ -586,11 +563,6 @@ body {
   padding-top: 113px;
 }
 
-.regular-customers-list {
-  display: flex;
-  justify-content: center;
-}
-
 .regular-customers-item {
   width: 170px;
   height: 92px;
@@ -600,9 +572,6 @@ body {
 }
 
 .regular-customers-link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   width: 100%;
   height: 100%;
   border: 1px solid var(--icon-color);
@@ -622,8 +591,6 @@ body {
 }
 
 .portfolio-navigation {
-  display: flex;
-  justify-content: center;
   margin-bottom: 50px;
 }
 
@@ -738,6 +705,11 @@ body {
 
 .contact-item:not(:last-child) {
   margin-bottom: 9px;
+}
+
+.page-footer__logo {
+  display: block;
+  margin-bottom: 20px;
 }
 
 .contact-link {

@@ -1,6 +1,5 @@
 .social-list {
-    display: flex;
-    justify-content: center;
+    @extend %align;
 }
 
 .social-list-item:not(:last-child) {
@@ -8,9 +7,7 @@
 }
 
 .social-list-link {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @extend %align;
     width: 44px;
     height: 44px;
     border-radius: 50%;

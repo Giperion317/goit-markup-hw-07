@@ -90,9 +90,7 @@
 }
 
 .contact-form-checkbox-label {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @extend %align;
 
     font-size: 14px;
     line-height: 1.71;
