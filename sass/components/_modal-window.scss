@@ -19,7 +19,7 @@
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-clous-btn {
+.modal__clous-btn {
     position: absolute;
     top: 8px;
     right: 8px;
@@ -35,11 +35,11 @@
     cursor: pointer;
 }
 
-.modal-btn-icon {
+.modal__clous-icon {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    .modal-clous-btn:hover &,
-    .modal-clous-btn:focus & {
+    .modal__clous-btn:hover &,
+    .modal__clous-btn:focus & {
         fill: var(--accent-color);
     }
 }

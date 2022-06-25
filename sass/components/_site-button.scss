@@ -1,4 +1,4 @@
-.modal-button {
+.button {
     min-width: 200px;
     font-family: inherit;
     font-weight: 700;
@@ -20,15 +20,5 @@
         }
 }
 
-.form-footer-btn {
-    @extend %align;
-}
 
-.form-footer-btn-icon {
-    margin-left: 10px;
-    fill: var(--secondory-color);
-}
 
-.contact-form-btn {
-    align-self: center;
-}
