@@ -22,7 +22,7 @@
   overflow: hidden;
 }
 
-.subscription-form__button, .portfolio-navigation, .regular-customers-link, .regular-customers-list, .work-image-title, .credo-icon-conteiner, .contact-form__checkbox-label, .modal__clous-btn, .social-list__link, .social-list {
+.subscription-form__button, .portfolio-navigation, .customers__link, .customers, .work__title, .credo__wrapper, .contact-form__checkbox-label, .modal__clous-btn, .social-list__link, .social-list {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -78,6 +78,15 @@ body {
   padding-bottom: 94px;
 }
 
+.section__title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
 .button {
   min-width: 200px;
   font-family: inherit;
@@ -127,15 +136,6 @@ body {
   fill: var(--secondory-color);
 }
 
-.section-title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
-  text-align: center;
-  margin-bottom: 50px;
-}
-
 .logo {
   font-family: var(--secondory-font);
   font-weight: 700;
@@ -145,11 +145,11 @@ body {
   color: var(--accent-color);
 }
 
-.logo_theme_dark {
+.logo__dark {
   color: #000000;
 }
 
-.logo_theme_wite {
+.logo__lite {
   color: var(--secondory-color);
 }
 
@@ -322,11 +322,11 @@ body {
   align-self: center;
 }
 
-.page-header {
+.header {
   border-bottom: 1px solid #ECECEC;
 }
 
-.pape-header__conteiner {
+.header__conteiner {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -337,7 +337,7 @@ body {
   align-items: center;
 }
 
-.page-header__logo {
+.header__logo {
   margin-right: 93px;
 }
 
@@ -424,7 +424,7 @@ body {
   background-size: cover;
 }
 
-.hero-title {
+.hero__title {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -434,7 +434,7 @@ body {
   margin-bottom: 30px;
 }
 
-.hero-title__item {
+.hero__item {
   display: block;
 }
 
@@ -445,20 +445,20 @@ body {
   margin-top: -30px;
 }
 
-.credo-item {
+.credo__item {
   flex-basis: calc((100% - 120px) / 4);
   margin-left: 30px;
   margin-top: 30px;
 }
 
-.credo-icon-conteiner {
+.credo__wrapper {
   height: 120px;
   background-color: var(--back-ground-section-color);
   border-radius: 4px;
   margin-bottom: 30px;
 }
 
-.credo-title {
+.credo__title {
   font-weight: 700;
   font-size: 14px;
   letter-spacing: 0.03em;
@@ -466,14 +466,14 @@ body {
   margin-bottom: 10px;
 }
 
-.credo-text {
+.credo__text {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--text-color);
 }
 
-.section-work {
+.work__section {
   padding-top: 0;
 }
 
@@ -484,17 +484,17 @@ body {
   margin-top: -30px;
 }
 
-.work-item {
+.work__item {
   flex-basis: calc((100% - 90px) / 3);
   margin-left: 30px;
   margin-top: 30px;
 }
 
-.work-image-wrapper {
+.work__wrapper {
   position: relative;
 }
 
-.work-image-title {
+.work__title {
   position: absolute;
   left: 0;
   bottom: 0;
@@ -508,7 +508,7 @@ body {
   height: 70px;
 }
 
-.our-team-section {
+.our-team__section {
   background-color: var(--back-ground-section-color);
 }
 
@@ -519,7 +519,7 @@ body {
   margin-top: -30px;
 }
 
-.our-team-item {
+.our-team__item {
   flex-basis: calc((100% - 120px) / 4);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -527,13 +527,13 @@ body {
   margin-top: 30px;
 }
 
-.our-team-item-wrapper {
+.our-team__wrapper {
   padding-top: 30px;
   padding-bottom: 30px;
   background-color: var(--secondory-color);
 }
 
-.our-team-image-title {
+.our-team__title {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -542,7 +542,7 @@ body {
   margin-bottom: 10px;
 }
 
-.our-team-image-text {
+.our-team__text {
   line-height: 1.19;
   text-align: center;
   color: var(--text-color);
@@ -550,46 +550,46 @@ body {
   margin-bottom: 16px;
 }
 
-.regular-customers {
+.customers__section {
   padding-top: 113px;
 }
 
-.regular-customers-item {
+.customers__item {
   width: 170px;
   height: 92px;
 }
-.regular-customers-item:not(:last-child) {
+.customers__item:not(:last-child) {
   margin-right: 30px;
 }
 
-.regular-customers-link {
+.customers__link {
   width: 100%;
   height: 100%;
   border: 1px solid var(--icon-color);
   border-radius: 4px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.regular-customers-link:hover, .regular-customers-link:focus {
+.customers__link:hover, .customers__link:focus {
   border-color: var(--accent-color);
 }
 
-.regular-customers-icon {
+.customers__icon {
   fill: var(--icon-color);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.regular-customers-link:hover .regular-customers-icon, .regular-customers-link:focus .regular-customers-icon {
+.customers__link:hover .customers__icon, .customers__link:focus .customers__icon {
   fill: var(--accent-color);
 }
 
-.portfolio-navigation {
+.portfolio-navigation_margin_bottom {
   margin-bottom: 50px;
 }
 
-.portfolio-navigation-item:not(:last-child) {
+.portfolio-navigation__item:not(:last-child) {
   margin-right: 8px;
 }
 
-.portfolio-navigation-button {
+.portfolio-navigation__button {
   min-width: 73px;
   font-family: inherit;
   font-weight: 500;
@@ -603,40 +603,40 @@ body {
   padding: 6px 22px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.portfolio-navigation-button:hover, .portfolio-navigation-button:focus {
+.portfolio-navigation__button:hover, .portfolio-navigation__button:focus {
   background-color: var(--accent-color);
   color: var(--secondory-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.portfolio-works {
+.portfolio {
   display: flex;
   flex-wrap: wrap;
   margin-left: -30px;
   margin-top: -30px;
 }
 
-.portfolio-works-item {
+.portfolio__item {
   flex-basis: calc((100% - 90px) / 3);
   margin-left: 30px;
   margin-top: 30px;
 }
 
-.portfolio-works-link {
+.portfolio__link {
   display: block;
   color: inherit;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.portfolio-works-link:hover, .portfolio-works-link:focus {
+.portfolio__link:hover, .portfolio__link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.portfolio-works-item-image-wrapper {
+.portfolio__image-wrapper {
   position: relative;
   overflow: hidden;
 }
 
-.portfolio-works-overley {
+.portfolio__overley {
   position: absolute;
   top: 0;
   left: 0;
@@ -653,18 +653,18 @@ body {
   transform: translateY(100%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.portfolio-works-link:hover .portfolio-works-overley, .portfolio-works-link:focus .portfolio-works-overley {
+.portfolio__link:hover .portfolio__overley, .portfolio__link:focus .portfolio__overley {
   transform: translateY(0%);
 }
 
-.portfolio-works-item-wrapper {
+.portfolio__wrapper {
   border-left: 1px solid #EEEEEE;
   border-right: 1px solid #EEEEEE;
   border-bottom: 1px solid #EEEEEE;
   padding: 20px 24px;
 }
 
-.portfolio-works-item-title {
+.portfolio__title {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -672,29 +672,29 @@ body {
   margin-bottom: 4px;
 }
 
-.portfolio-works-item-text {
+.portfolio__text {
   line-height: 1.86;
   letter-spacing: 0.03em;
   color: var(--text-color);
 }
 
-.page-footer {
+.footer {
   background-color: #2F303A;
+}
+
+.footer__conteiner {
+  display: flex;
+  align-items: baseline;
   padding-top: 60px;
   padding-bottom: 60px;
 }
 
-.page-footer__conteiner {
-  display: flex;
-  align-items: baseline;
-}
-
-.page-footer__contact-block {
+.footer__contact-block {
   flex-grow: 1;
   margin-right: 70px;
 }
 
-.page-footer__logo {
+.footer__logo {
   display: block;
   margin-bottom: 20px;
 }
@@ -719,11 +719,11 @@ body {
   color: var(--secondory-color);
 }
 
-.page-footer__social-block {
+.footer__social-block {
   margin-right: 93px;
 }
 
-.page-footer__social-title {
+.footer__social-title {
   font-weight: 700;
   font-size: 14px;
   letter-spacing: 0.03em;
@@ -732,7 +732,7 @@ body {
   margin-bottom: 20px;
 }
 
-.page-footer__social-list {
+.footer__social-list {
   justify-content: start;
 }
 

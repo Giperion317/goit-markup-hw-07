@@ -1,12 +1,12 @@
-    .regular-customers {
+    .customers__section {
         padding-top: 113px;
     }
 
-    .regular-customers-list {
+    .customers {
         @extend %align;
     }
 
-    .regular-customers-item {
+    .customers__item {
         width: 170px;
         height: 92px;
 
@@ -15,9 +15,7 @@
         }
     }
 
-    
-
-    .regular-customers-link {
+    .customers__link {
         @extend %align;
 
         width: 100%;
@@ -33,13 +31,13 @@
         }
     }
 
-    .regular-customers-icon {
+    .customers__icon {
         fill: var(--icon-color);
 
         transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-        .regular-customers-link:hover &,
-        .regular-customers-link:focus & {
+        .customers__link:hover &,
+        .customers__link:focus & {
             fill: var(--accent-color);
         }
     }

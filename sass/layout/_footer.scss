@@ -1,20 +1,21 @@
-.page-footer {
+.footer {
     background-color: #2F303A;
+}
+
+.footer__conteiner {
+    display: flex;
+    align-items: baseline;
+
     padding-top: 60px;
     padding-bottom: 60px;
 }
 
-.page-footer__conteiner {
-    display: flex;
-    align-items: baseline;
-}
-
-.page-footer__contact-block {
+.footer__contact-block {
     flex-grow: 1;
     margin-right: 70px;
 }
 
-.page-footer__logo {
+.footer__logo {
     display: block;
     margin-bottom: 20px;
 }
@@ -42,11 +43,11 @@
     color: var(--secondory-color);
 }
 
-.page-footer__social-block {
+.footer__social-block {
     margin-right: 93px;
 }
 
-.page-footer__social-title {
+.footer__social-title {
     font-weight: 700;
     font-size: 14px;
     letter-spacing: 0.03em;
@@ -56,7 +57,7 @@
     margin-bottom: 20px;
 }
 
-.page-footer__social-list {
+.footer__social-list {
     justify-content: start;
 }
 
